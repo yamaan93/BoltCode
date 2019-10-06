@@ -17,6 +17,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { JobPostingComponent } from '../../job-posting/job-posting.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
+import { LoginComponent } from '../../login/login.component';
+import { SignupComponent } from '../../signup/signup.component';
 
 @NgModule({
   imports: [
@@ -38,7 +40,9 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
-    JobPostingComponent
+    JobPostingComponent,
+    LoginComponent,
+    SignupComponent
   ]
 })
 

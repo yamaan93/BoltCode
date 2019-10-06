@@ -14,8 +14,8 @@ import {MatCardModule, MatCard} from '@angular/material';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { JobPostingComponent } from './job-posting/job-posting.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
+// import { LoginComponent } from './login/login.component';
+// import { SignupComponent } from './signup/signup.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
@@ -37,8 +37,8 @@ import { config } from './config.js'
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    LoginComponent,
-    SignupComponent
+    // LoginComponent,
+    // SignupComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
