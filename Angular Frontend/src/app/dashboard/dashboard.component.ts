@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as Chartist from 'chartist';
 import { JobPostingComponent } from '../job-posting/job-posting.component';
+import {JobService} from '../job.service';
 // import {MatCardModule, MatCard} from '@angular/material';
 
 @Component({
@@ -11,7 +12,11 @@ import { JobPostingComponent } from '../job-posting/job-posting.component';
 
 })
 export class DashboardComponent {
-  postings = [1,2,3,4,5,6];
+  postings = this.jobService.jobPostings;
+    constructor(private jobService:JobService) {
+      // this.postings = jobService.getJobs();
+     }
+
   // public lineBigDashboardChartType;
   // public gradientStroke;
   // public chartColor;
@@ -62,7 +67,6 @@ export class DashboardComponent {
   //     return "rgb(" + r + ", " + g + ", " + b + ")";
   //   }
   // }
-  constructor() { }
 
   // ngOnInit() {
   //   this.chartColor = "#FFFFFF";

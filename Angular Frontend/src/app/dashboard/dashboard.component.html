@@ -1,4 +1,4 @@
-    <!--     Fonts and icons     -->
+   <div class="z-index"> <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
@@ -10,15 +10,15 @@
     </div>
 
   </div>
-  <div class="row" style="border-top:#ff3636 2em solid; margin-bottom:1em;">
-    <div class="col">
+  <div class="row " style="border-top:#ff3636 2em solid; margin-bottom:1em;">
+    <div class="col no-gutters">
 
 
 
-        <cdk-virtual-scroll-viewport class="disable-scrollbars mt-2" style="height: 500px" itemSize="90" >
-           <div  fxLayout="row wrap" class="disable-scrollbars" fxLayoutWrap fxLayoutAlign="center center">
-            <ng-container class="disable-scrollbars" *cdkVirtualFor="let posting of postings">
-              <app-job-posting></app-job-posting>
+        <cdk-virtual-scroll-viewport class="disable-scrollbars mt-4  text-center" style="height: 700px; width:100%; display:flex; justify-content: space-around !important;" itemSize="1" >
+           <div  fxLayout="row wrap" class="disable-scrollbars "  style="justify-content: space-around !important;" fxFlex="100%" fxLayoutWrap fxLayoutGap="0px" fxLayoutAlign=" center">
+            <ng-container class="disable-scrollbars" *cdkVirtualFor="let posting of postings" >
+              <app-job-posting [posting]="posting"></app-job-posting>
             </ng-container>
           </div>
           </cdk-virtual-scroll-viewport>
@@ -43,7 +43,8 @@
     <div class="col-lg-4">
       <div class="card card-chart">
         <div class="card-header">
-          <h5 class="card-category">Global Sales</h5>
+          <h5 cl\
+          ass="card-category">Global Sales</h5>
           <h4 class="card-title">Shipped Products</h4>
           <div ngbDropdown>
             <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" ngbDropdownToggle>
@@ -322,8 +323,13 @@
     </div>
   </div> 
 </div>-->
+</div>
 <style>
+/* .z-index {
+  height:100vh !important;
+  z-index: 1000 !important;
 
+} */
 .job-postings {
   font-family: 'Montserrat';
   font-weight: 500;

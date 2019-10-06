@@ -9,30 +9,49 @@
     </div>
   </div> -->
 
-  <!-- <mat-grid-tile> -->
+  <!-- <mat-grid-tile> 
       <div>
-          <mat-card class="example-card">
+          <!-- <mat-card class="example-card">
               <mat-card-header class="">
-                <!-- <div mat-card-avatar class="example-header-image"></div> -->
-                <mat-card-title class="">HEADER</mat-card-title>
-                <mat-card-subtitle>date</mat-card-subtitle>
+                <div mat-card-avatar class="example-header-image">
+                <img [src]="posting.imageURL">
+                </div>
+                <!-- <mat-card-title class="">{{posting.title}}</mat-card-title>
+                <mat-card-subtitle><h4>DUE: </h4>{{posting.date | date:'short':'UTC+3'}}</mat-card-subtitle> 
           
               </mat-card-header>
           
-              <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+              <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> 
               <mat-card-content>
                 <p>
-          some content lol
+          {{posting.description}}
                 </p>
               </mat-card-content>
               <mat-card-actions>
-                <button mat-button  style="color:#363e7a;">EDIT</button>
-                 <button mat-button  style="color:#a13830;">DELETE</button>
-                <!-- <button mat-button>SHARE</button> -->
+                <button mat-button  style="background:#363e7a;">START</button>
+                 <!-- <button mat-button  style="color:#a13830;">DELETE</button> -->
+                <!-- <button class="float-right mr-4" mat-fab style="background:green; height:125% !important;"color="primary"> {{posting.reward | currency:'CAD'}}</button> -->
+                <!-- <button mat-button>SHARE</button> 
               </mat-card-actions>
             </mat-card>
-          </div>
-
+          </div> -->
+<div class="card mb-4 ml-2 mr-2" style="max-width: 48% ;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img [src]="posting.imageURL"style="object-fit: cover;">
+             <button type="button" mat-raised-button class=" w-100 mt-1 btn btn-secondary" style="background:blue;">View Project</button>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{posting.title}}</h5>
+        <p class="card-text">{{posting.description}}</p>
+        <p><b class="float-right" >Reward: <span style="color:green;">{{posting.reward  | currency:'CAD'}}</span></b></p>
+                <p><b class="float-left" >Company: <span style="color:darkblueY;">{{posting.companyName}}</span></b></p>
+        <!-- <p class="card-text"><small class="text-muted">{{posting.date | date:'short':'UTC+3'}}</small></p> -->
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <style>
