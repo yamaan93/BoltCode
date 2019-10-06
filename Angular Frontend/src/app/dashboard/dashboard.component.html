@@ -15,7 +15,7 @@
 
 
 
-        <cdk-virtual-scroll-viewport class="disable-scrollbars mt-4  text-center" style="height: 800px; width:100%; display:flex; justify-content: space-around !important;" itemSize="1" >
+        <cdk-virtual-scroll-viewport class="disable-scrollbars mt-4  text-center" style="height: 1000px; width:100%; display:flex; justify-content: space-around !important;" itemSize="1" >
            <div  fxLayout="row wrap" class="disable-scrollbars "  style="justify-content: space-around !important;" fxFlex="100%" fxLayoutWrap fxLayoutGap="0px" fxLayoutAlign=" center">
             <ng-container class="disable-scrollbars" *cdkVirtualFor="let posting of postings" >
               <app-job-posting [posting]="posting"></app-job-posting>
