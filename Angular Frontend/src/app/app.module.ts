@@ -14,6 +14,11 @@ import {MatCardModule, MatCard} from '@angular/material';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { JobPostingComponent } from './job-posting/job-posting.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { Config } from './config.js'
 
 @NgModule({
   imports: [
@@ -24,11 +29,14 @@ import {DashboardComponent} from './dashboard/dashboard.component';
     RouterModule,
     AppRoutingModule,
     NgbModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    AngularFireModule.initializeApp(Config),
+    AngularFireAuthModule
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
+    LoginComponent,
 
   ],
   providers: [],
