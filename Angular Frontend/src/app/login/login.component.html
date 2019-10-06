@@ -6,21 +6,21 @@
 
 <div class="body d-flex justify-content-center">
   <div class="col-md-6 align-items-center justify-content-center row text-center">
-      <div class="card justify-content-center">
-          <div class="card-body">
-              <h5 class="card-title">Welcome to BoltCode!</h5>
-              <form>
-                  <div class="form-group">
-                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Username or email">
-                  </div>
-                  <div class="form-group">
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-              </form>        
-              <a href="#" class="btn btn-primary">Log in</a>
-          </div>
-          <span>Don't have an account? <a href="/">Sign up.</a></span>
-      </div>
+    <div class="card justify-content-center">
+        <div class="card-body">
+            <h5 class="card-title">Welcome back!</h5>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="emailInput" placeholder="Username or email" #userEmail required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="passwordInput" placeholder="Password" #userPassword required>
+                </div>
+            </form>        
+            <div class="btn btn-primary" id="loginButton" (click)="authService.login(userEmail.value, userPassword.value)">Log in</div>
+        </div>
+        <span>Don't have an account? <a href="/">Sign up.</a></span>
+    </div>
   </div>
 </div>
 

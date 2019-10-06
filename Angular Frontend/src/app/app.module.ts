@@ -15,10 +15,11 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { JobPostingComponent } from './job-posting/job-posting.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import { Config } from './config.js'
+import { config } from './config.js'
 
 @NgModule({
   imports: [
@@ -30,14 +31,14 @@ import { Config } from './config.js'
     AppRoutingModule,
     NgbModule,
     ToastrModule.forRoot(),
-    AngularFireModule.initializeApp(Config),
+    AngularFireModule.initializeApp(config),
     AngularFireAuthModule
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
     LoginComponent,
-
+    SignupComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
