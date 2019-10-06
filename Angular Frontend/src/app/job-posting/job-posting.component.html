@@ -1,4 +1,4 @@
-<div class="card card-nav-tabs">
+<!-- <div class="card card-nav-tabs">
     <div class="card-header card-header-warning">
       Featured
     </div>
@@ -7,4 +7,54 @@
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-  </div>
+  </div> -->
+
+  <!-- <mat-grid-tile> -->
+      <div>
+          <mat-card class="example-card">
+              <mat-card-header class="">
+                <!-- <div mat-card-avatar class="example-header-image"></div> -->
+                <mat-card-title class="">HEADER</mat-card-title>
+                <mat-card-subtitle>date</mat-card-subtitle>
+          
+              </mat-card-header>
+          
+              <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+              <mat-card-content>
+                <p>
+          some content lol
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button  style="color:#363e7a;">EDIT</button>
+                 <button mat-button  style="color:#a13830;">DELETE</button>
+                <!-- <button mat-button>SHARE</button> -->
+              </mat-card-actions>
+            </mat-card>
+          </div>
+
+
+
+<style>
+.example-card {
+  background:white;
+  min-width:20em;
+  max-width: 80vw !important;
+   /* margin-bottom:2.5vw !important; */
+   margin:30px !important;
+   box-shadow: 10px 10px #383737;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .example-card {
+    min-width:17em !important;
+/*     
+    width:85vw !important;
+    min-width:70vw !important; */
+  }
+}</style>

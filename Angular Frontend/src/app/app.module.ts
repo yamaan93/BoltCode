@@ -10,9 +10,10 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
-
+import {MatCardModule, MatCard} from '@angular/material';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { JobPostingComponent } from './job-posting/job-posting.component';
+import {DashboardComponent} from './dashboard/dashboard.component';
 
 @NgModule({
   imports: [
@@ -28,7 +29,6 @@ import { JobPostingComponent } from './job-posting/job-posting.component';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    JobPostingComponent
 
   ],
   providers: [],

@@ -1,14 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import * as Chartist from 'chartist';
 import { JobPostingComponent } from '../job-posting/job-posting.component';
+// import {MatCardModule, MatCard} from '@angular/material';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
+  
 
 })
 export class DashboardComponent {
+  postings = [1,2,3,4,5,6];
   // public lineBigDashboardChartType;
   // public gradientStroke;
   // public chartColor;

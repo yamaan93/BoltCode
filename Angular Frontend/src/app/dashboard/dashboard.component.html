@@ -10,11 +10,20 @@
     </div>
 
   </div>
-  <div class="row">
+  <div class="row" style="border-top:#ff3636 2em solid; margin-bottom:1em;">
     <div class="col">
 
-    </div>
 
+
+        <cdk-virtual-scroll-viewport class="disable-scrollbars mt-2" style="height: 500px" itemSize="90" >
+           <div  fxLayout="row wrap" class="disable-scrollbars" fxLayoutWrap fxLayoutAlign="center center">
+            <ng-container class="disable-scrollbars" *cdkVirtualFor="let posting of postings">
+              <app-job-posting></app-job-posting>
+            </ng-container>
+          </div>
+          </cdk-virtual-scroll-viewport>
+
+  </div>
   </div>
 
 </div>
