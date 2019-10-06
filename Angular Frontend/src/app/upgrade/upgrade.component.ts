@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-upgrade',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpgradeComponent implements OnInit {
 
-  constructor() { }
+  content = new FormControl('');
+  title = new FormControl('');
+  constructor() {
+    // this.content = FormControl();
+   }
 
   ngOnInit() {
   }

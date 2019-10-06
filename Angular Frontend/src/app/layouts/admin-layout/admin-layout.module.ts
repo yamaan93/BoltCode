@@ -10,7 +10,7 @@ import { TypographyComponent } from '../../typography/typography.component';
 import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
-import {MatCardModule, MatButtonModule} from '@angular/material';
+import {MatCardModule, MatButtonModule,MatFormFieldModule, MatSelectModule, MatOptionModule, MatIconModule, MatInputModule} from '@angular/material';
 import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
@@ -28,6 +28,14 @@ import { SignupComponent } from '../../signup/signup.component';
     ChartsModule,
     MatCardModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatIconModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+    FormsModule,
     ScrollingModule,
     NgbModule,
     ToastrModule.forRoot()
